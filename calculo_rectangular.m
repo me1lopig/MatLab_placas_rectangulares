@@ -9,7 +9,7 @@
 dpx=diff(w,1,x);  % primera derivada con respecto a x
 ddpx=diff(w,2,x); % segunda derivada con respecto a x
 dpy=diff(w,1,y); % primera derivada con respecto a y
-ddpy=diff(w,2,x);% segunda derivada con respecto a y
+ddpy=diff(w,2,y);% segunda derivada con respecto a y
 ddpxy=diff(dpx,1,y); % segunda derivada con respecto a x y
 
 % Calculo de momentos
