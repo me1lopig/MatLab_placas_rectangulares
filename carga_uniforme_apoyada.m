@@ -1,14 +1,15 @@
- % Calculo de placas
+% Calculo de placas
 % Programa desarrollado por Germán López Pineda
 % Area de Mecánica de los Medios Contínuos y Teoría de Estructuras
 % Universidad de Córdoba
 % EPS de Córdoba
+
 %  scrip general de cálculo de placas
 
 % la función w(x,y) flecha de la placa simplemente apoyada
 
 % Datos de la carga uniforme
-p0=input('Intrdocir Carga[kN/m2]='); 
+p0=input('Introducir Carga[kN/m2]='); 
 % Carga sobre la placa en kN/m2 se pone positiva hacia abajo
 
 % declaracion de variables simbolicas

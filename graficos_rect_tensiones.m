@@ -2,55 +2,54 @@
 % Programa desarrollado por Germán López Pineda
 % Area de Mecánica de los Medios Contínuos y Teoría de Estructuras
 % Universidad de Córdoba
-% EPS de Córdoba
+% EPS de Belmez
 % script general de representacion grafica de placas rectangulares
 
-
-
-% Representaciones graficas de los Momentos
-% grafico Mx
+% Representaciones graficas de las tensiones
+% grafico sigmax
 figure(3)
-ezsurf(Mx,[0,a,0,b]);
+ezsurf(sigmax,[0,a,0,b]);
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 zlabel('Mx')  % etiqueta del eje z
-title ('Representacion de Mx')
+title ('Representacion de sigmax')
 
-% grafico My
+% grafico sigmay
 figure(4)
-ezsurf(My,[0,a,0,b]);
+ezsurf(sigmay,[0,a,0,b]);
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 zlabel('My')  % etiqueta del eje z
-title ('Representacion de My')
+title ('Representacion de sigmay')
 
-% grafico Mxy
+% grafico tauxy
 figure(5)
-ezsurf(Mxy,[0,a,0,b]);
+ezsurf(tauxy,[0,a,0,b]);
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 zlabel('Mxy')  % etiqueta del eje z
-title ('Representacion de Mxy')
+title ('Representacion de tauxy')
 
-% grafico Mx
+% grafico sigmax
 figure(6)
-ezcontourf(Mx,[0,a,0,b]);
+ezcontourf(sigmax,[0,a,0,b]);
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
-title ('Representacion de Mx')
+title ('Representacion de sigmax')
 colorbar
-% grafico My
+% grafico sigmay
 figure(7)
-ezcontourf(My,[0,a,0,b]);
+ezcontourf(sigmay,[0,a,0,b]);
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
-title ('Representacion de My')
+title ('Representacion de sigmay')
 colorbar
-% grafico Mxy
+
+% grafico tauxy
 figure(8)
-ezcontourf(Mxy,[0,a,0,b]);
+ezcontourf(tauxy,[0,a,0,b]);
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
-title ('Representacion de Mxy')
+title ('Representacion de tauxy')
 colorbar
 

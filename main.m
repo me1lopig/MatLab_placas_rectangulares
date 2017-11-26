@@ -3,31 +3,44 @@
 % Area de Mecánica de los Medios Contínuos y Teoría de Estructuras
 % Universidad de Córdoba
 % EPS de Córdoba
-% en este script se introducen los datos de la placa 
-% y los parámetros de convergencia de las series de Fourier
-
-% Características geometricas generales de la placa
-t=input('espesor de la placa [m]='); % Espesor de la placa [m]
-a=input('Lado direccion x [m]='); % Lado direccion x [m]
-b=input('Lado direccion y [m]='); % lado en la dirección y [m]
-
-% Características deformacionales de la placa
-E=input('Módulo de Elasticidad en [kN/m2]='); % Módulo de Elasticidad en [kN/m2]
-poisson=input('coefiente de Poisson ='); % Coeficiente de poisson
-
-% Cálculos intermedios
-D=(E*t^3)/(12*(1-poisson^2)); % rigidez de la placa esto evidentente
-
-% valor de control de la elementos de la serie de Fourier para Navier
-disp('Introducción de los elementos de control de la suma de Series')
-m=input('valor de m=');
-n=input('valor de n=');
+% script general de control de menu de entrada de datos
+% Mis agradecimientos a la alumna de Grado de Ingeniería Mecánica de la 
+% EPS de Córdoba María Jesús Romero Lara 
+% por la detección de un bug en la definición de la carga
+% puntual y en el cálculo de la segunda derivada parcial con respecto a y
+% de la expresión de w(x,y)
 
 
-
-
-
-
-
-
+% script de gestion de selección de opciones por menu
+menu
+% opciones de entrada de datos
+while opcion~=0
+    opcion=input('Introduce la opcion (se sale con 0) [ ]=');
+    switch opcion
+        case 1
+            datos
+            menu
+        case 2
+            carga_puntual_apoyada
+            menu
+        case 3
+            carga_uniforme_apoyada
+            menu
+        case 4
+            carga_lineal_x_apoyada
+            menu
+        case 5
+            graficos_rect_Flecha    
+            menu
+        case 6
+            graficos_rect_Momentos
+            menu
+        case 7
+            graficos_rect_Cortantes
+            menu
+        otherwise
+            continue
+   
+    end
+end
 

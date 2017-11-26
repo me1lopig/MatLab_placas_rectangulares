@@ -2,11 +2,8 @@
 % Programa desarrollado por Germán López Pineda
 % Area de Mecánica de los Medios Contínuos y Teoría de Estructuras
 % Universidad de Córdoba
-% EPS de Belmez
+% EPS de Córdoba
 % script general de representacion grafica de placas rectangulares
-
-
-
 
 % Graficas de los Cortantes
 
