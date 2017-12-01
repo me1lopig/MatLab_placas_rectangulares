@@ -12,10 +12,12 @@
 
 
 % script de gestion de selección de opciones por menu
+clc %borrado de la pantalla
+clear % borrado de las variables preexistentes 
 menu
 % opciones de entrada de datos
 while opcion~=0
-    opcion=input('Introduce la opcion (se sale con 0) [ ]=');
+    opcion=input('Introduce la opcion (se sale con 0)=');
     switch opcion
         case 1
             datos
@@ -38,9 +40,15 @@ while opcion~=0
         case 7
             graficos_rect_Cortantes
             menu
+        case 8
+            v_funciones
+            menu
+            
         otherwise
             continue
    
     end
 end
+fprintf('Fin del programa\n')
+fprintf('\n')
 
