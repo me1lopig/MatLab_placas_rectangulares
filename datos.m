@@ -19,6 +19,19 @@ disp('Introducción de los elementos de control de la suma de Series')
 m=input('valor de m=');
 n=input('valor de n=');
 
+% impresion de los resultados
+
+fprintf('\n\nComprobacion de los datos del modelo \n')
+fprintf('Datos del modelo \n'); 
+fprintf('Longitud lado dirección x [m] %.2f\n', a); 
+fprintf('Longitud lado dirección y [m] %.2f \n', b);
+fprintf('Espesor de la placa %.2f [m] \n', t);  
+fprintf('Módulo de elasticidad  E=%.2f [kN/m2] \n', E);  
+fprintf('Módulo de Poisson nu=%.2f  \n', poisson);
+
+tecla=input('Pulsa una tecla para continuar ');
+
+
 
 
 

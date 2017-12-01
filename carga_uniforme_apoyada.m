@@ -28,3 +28,4 @@ w=(-16*p0/pi^2)*w;
 
 % ejecutamos el programa de calculo
 calculo_rectangular;
+
