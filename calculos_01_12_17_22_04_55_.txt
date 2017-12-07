@@ -1,0 +1,13 @@
+Datos del modelo 
+Longitud lado dirección x [m] 15.00
+Longitud lado dirección y [m] 25.00 
+Espesor de la placa 0.50 [m] 
+Módulo de elasticidad  E=100000000.00 [kN/m2] 
+Módulo de Poisson nu=0.25  
+Valores de los resultados
+w(2.50,3.00)=-0.00000270 m 
+Mx(2.50,3.00)=-0.09061829 kNxm 
+My(2.50,3.00)=-0.18809670 kNxm 
+Mxy(2.50,3.00)=0.32928223 kNxm 
+Qx(2.50,3.00)=-0.12272501 m kN 
+Qy(2.50,3.00)=-0.05301163 m kN 

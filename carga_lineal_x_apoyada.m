@@ -8,6 +8,7 @@
 
 % la función w(x,y) flecha de la placa simplemente apoyada
 
+tipocarga=3; % identificador del tipo de carga
 % Datos de la carga puntual
 qp=input('Carga puntual [kN/ml]=');
 % Carga sobre la placa en kN se pone positiva hacia abajo

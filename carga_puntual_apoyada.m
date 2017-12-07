@@ -6,6 +6,8 @@
 %  scrip general de cálculo de placas
 
 % la función w(x,y) flecha de la placa simplemente apoyada
+% con carga puntual
+tipocarga=1; % identificador del tipo de carga
 
 % Datos de la carga puntual
 qp=input('Carga puntual [kN]=');

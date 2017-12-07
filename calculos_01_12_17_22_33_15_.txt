@@ -1,0 +1,16 @@
+Datos del modelo 
+Longitud lado dirección x [m] 10.00
+Longitud lado dirección y [m] 25.00 
+Espesor de la placa 0.50 [m] 
+Módulo de elasticidad  E=100000000.00 [kN/m2] 
+Módulo de Poisson nu=0.25  
+Valor de la carga puntual qp=150.00 kN 
+Coordenada xp=2.00
+Coordenada yp=7.00
+Valores de los resultados
+w(1.00,8.00)=-0.00005462 m 
+Mx(1.00,8.00)=-14.93817714 kNxm 
+My(1.00,8.00)=-9.24977946 kNxm 
+Mxy(1.00,8.00)=-6.86967124 kNxm 
+Qx(1.00,8.00)=-25.17744563 m kN 
+Qy(1.00,8.00)=6.35386288 m kN 

@@ -8,6 +8,7 @@
 
 % la función w(x,y) flecha de la placa simplemente apoyada
 
+tipocarga=2; % identificador del tipo de carga
 % Datos de la carga uniforme
 p0=input('Introducir Carga[kN/m2]='); 
 % Carga sobre la placa en kN/m2 se pone positiva hacia abajo

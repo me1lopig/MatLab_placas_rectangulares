@@ -17,7 +17,7 @@ clear % borrado de las variables preexistentes
 menu
 % opciones de entrada de datos
 while opcion~=0
-    opcion=input('Introduce la opcion (se sale con 0)=');
+    opcion=input('Introduce la opcion [se sale con 0]=');
     switch opcion
         case 1
             datos
