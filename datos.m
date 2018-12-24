@@ -3,9 +3,10 @@
 % parametros de convergencia de las series de Fourier
 
 % Características geometricas generales de la placa
-t=input('espesor de la placa [m]='); % Espesor de la placa [m]
+
 a=input('Lado direccion x [m]='); % Lado direccion x [m]
 b=input('Lado direccion y [m]='); % lado en la dirección y [m]
+t=input('espesor de la placa [m]='); % Espesor de la placa [m]
 
 % Características deformacionales de la placa
 E=input('Módulo de Elasticidad en [kN/m2]='); % Módulo de Elasticidad en [kN/m2]

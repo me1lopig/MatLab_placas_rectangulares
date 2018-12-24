@@ -18,6 +18,7 @@ title ('Representacion de w(x,y)')
 % grafico w contour
 figure(2)
 ezcontourf(w,[0,a,0,b]);
+axis equal
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 title ('Representacion de w(x,y)')

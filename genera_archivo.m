@@ -23,19 +23,19 @@ fprintf(x1, 'Módulo de Poisson nu=%.2f  \n', poisson);
 switch tipocarga
     case 1
         % caso de carga puntual
-        fprintf(x1,'Carga puntual');
+        fprintf(x1,'Carga puntual\n');
         fprintf(x1,'Valor de la carga puntual qp=%.2f kN \n',qp);
         fprintf(x1,'Coordenada xp=%.2f\n',xp);
         fprintf(x1,'Coordenada yp=%.2f\n',yp);
           
     case 2
         % caso de carga uniforme
-        fprintf(x1,'Carga uniforme');
+        fprintf(x1,'Carga uniforme\n');
         fprintf(x1,'Valor de la carga uniforme p0=%.2f kN/m2 \n',p0);
                 
     case 3
         % caso de carga en faja direccion x
-        fprintf(x1,'Carga en faja paralela al eje x');
+        fprintf(x1,'Carga en faja paralela al eje x\n');
         fprintf(x1,'Valor de la carga en faja qp=%.2f kN/m \n',qp);
         fprintf(x1,'Coordenada yp=%.2f\n',yp);
 end

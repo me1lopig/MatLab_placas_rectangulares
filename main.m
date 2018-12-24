@@ -1,4 +1,5 @@
 % Calculo de placas
+% version diciembre de 2018
 % Programa desarrollado por Germán López Pineda
 % Area de Mecánica de los Medios Contínuos y Teoría de Estructuras
 % Universidad de Córdoba
@@ -8,8 +9,7 @@
 % EPS de Córdoba María Jesús Romero Lara 
 % por la detección de un bug en la definición de la carga
 % puntual y en el cálculo de la segunda derivada parcial con respecto a y
-% de la expresión de w(x,y)
-
+% de la expresión de w(x,y) 
 
 % script de gestion de selección de opciones por menu
 clc %borrado de la pantalla

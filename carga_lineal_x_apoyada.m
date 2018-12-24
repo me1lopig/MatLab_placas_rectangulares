@@ -21,14 +21,14 @@ syms x y;
 
 % definición de la funcion flecha para el caso de contorno apoyado
 w=0;
-for i=1:2:m
-    for j=1:n
+for i=1:m
+    for j=1:2:n
         Fnm=(((i/a)^2+(j/b)^2)^2);
-        w=w+(sin(i*pi*x/a)*sin(j*pi*y/b)*sin(j*pi*yp/b))/(n*Fnm);
+        w=w+(sin(i*pi*x/a)*sin(j*pi*y/b)*sin(j*pi*yp/b))/(i*Fnm);
     end
 end
 % constantes de la expresión de la flecha
-w=-8*qp*w/(b*pi^4*D);
+w=-8*qp*w/(b*pi^5*D);
 
 % ejecutamos el programa de calculo
 calculo_rectangular;

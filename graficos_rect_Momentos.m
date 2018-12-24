@@ -35,6 +35,7 @@ title ('Representacion de Mxy')
 % grafico Mx
 figure(6)
 ezcontourf(Mx,[0,a,0,b]);
+axis equal
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 title ('Representacion de Mx')
@@ -42,6 +43,7 @@ colorbar
 % grafico My
 figure(7)
 ezcontourf(My,[0,a,0,b]);
+axis equal
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 title ('Representacion de My')
@@ -49,6 +51,7 @@ colorbar
 % grafico Mxy
 figure(8)
 ezcontourf(Mxy,[0,a,0,b]);
+axis equal
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 title ('Representacion de Mxy')

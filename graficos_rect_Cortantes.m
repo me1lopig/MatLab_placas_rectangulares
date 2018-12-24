@@ -27,6 +27,7 @@ title ('Representacion de Qy(x,y)')
 % grafico Qx
 figure(11)
 ezcontourf(Qx,[0,a,0,b]);
+axis equal
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 title ('Representacion de Qx')
@@ -35,6 +36,7 @@ colorbar
 % grafico Qy
 figure(12)
 ezcontourf(Qy,[0,a,0,b]);
+axis equal
 xlabel('Lado a') % etiqueta del eje x
 ylabel('Lado b')  % etiqueta del eje y
 title ('Representacion de Qy')
