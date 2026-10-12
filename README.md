@@ -3,6 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/MATLAB-Toolbox-blue?style=for-the-badge&logo=mathworks" alt="MATLAB" />
   <img src="https://img.shields.io/badge/Type-Structural%20Analysis-orange?style=for-the-badge" alt="Structural Analysis" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT" />
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status" />
 </p>
 
@@ -56,13 +57,14 @@ MatLab_placas_rectangulares/
 ├── graficos_rect_tensiones.m     # Gráfica de tensiones
 ├── v_funciones.m                 # Evaluación de resultados en un punto concreto
 ├── genera_archivo.m              # Generación de archivo de resultados
-├── Instrucciones.pdf            # Documentación complementaria
-├── Instrucciones_2.pdf          # Documentación complementaria
-├── Instrucciones.docx           # Documento de ayuda
+├── Instrucciones.pdf             # Documentación complementaria
+├── Instrucciones_2.pdf           # Documentación complementaria
+├── Instrucciones.docx            # Documento de ayuda
+├── LICENSE                       # Licencia MIT
 ├── Python/
-│   └── lesen.txt                # Archivo auxiliar
-├── README.md                    # Documentación principal
-└── calculos_*.txt              # Archivos de salida generados por el programa
+│   └── lesen.txt                 # Archivo auxiliar
+├── README.md                     # Documentación principal
+└── calculos_*.txt                # Archivos de salida generados por el programa
 ```
 
 ## 🧪 Requisitos
@@ -111,10 +113,24 @@ Programa desarrollado por: Germán López Pineda
 
 Este proyecto está orientado a aplicaciones de ingeniería estructural y mecánica de medios continuos, con un enfoque didáctico y de cálculo analítico-numérico en placas rectangulares.
 
-## ⚠️ Licencia
+## 📜 Licencia
 
-No se ha incluido una licencia explícita en este repositorio. Si deseas reutilizar o redistribuir el código, conviene verificar si existe una política institucional o de autor antes de compartirlo públicamente.
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+La licencia MIT permite:
+- ✅ Uso comercial
+- ✅ Modificación
+- ✅ Distribución
+- ✅ Uso privado
+
+Con la única condición de incluir la atribución al autor original.
 
 ## ✅ Estado del proyecto
 
 Proyecto funcional de cálculo estructural en MATLAB para placas rectangulares, enfocado en análisis académico, representación gráfica y evaluación de resultados mecánicos.
+
+---
+
+<p align="center">
+  Desarrollado con ❤️ para la ingeniería estructural
+</p>
