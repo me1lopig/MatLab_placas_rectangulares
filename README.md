@@ -131,6 +131,3 @@ Proyecto funcional de cálculo estructural en MATLAB para placas rectangulares, 
 
 ---
 
-<p align="center">
-  Desarrollado con ❤️ para la ingeniería estructural
-</p>
