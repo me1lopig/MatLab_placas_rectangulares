@@ -1,93 +1,120 @@
-# Cálculo de placas rectangulares mediante series de Fourier
+# 🧮 Cálculo de placas rectangulares
 
-Este repositorio contiene un programa desarrollado en MATLAB para el análisis de placas rectangulares simplemente apoyadas en todos sus bordes, bajo diferentes tipos de carga, mediante la formulación basada en series de Fourier.
+<p align="center">
+  <img src="https://img.shields.io/badge/MATLAB-Toolbox-blue?style=for-the-badge&logo=mathworks" alt="MATLAB" />
+  <img src="https://img.shields.io/badge/Type-Structural%20Analysis-orange?style=for-the-badge" alt="Structural Analysis" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status" />
+</p>
 
-La aplicación calcula la flecha, momentos flectores, cortantes y tensiones de la placa, y permite visualizar resultados gráficos y exportar un resumen numérico en un archivo de texto.
+Este repositorio contiene un conjunto de scripts en MATLAB para el análisis de placas rectangulares simplemente apoyadas, aplicando la teoría de series de Fourier para resolver distintos tipos de carga y obtener magnitudes como flechas, momentos, cortantes y tensiones.
 
-## Descripción del proyecto
+## ✨ Descripción general
 
-El programa está orientado a la resolución de una placa rectangular con:
+El proyecto permite:
 
-- geometría definida por los lados `a` y `b`
+- definir las propiedades geométricas y mecánicas de la placa
+- seleccionar distintos tipos de carga
+- resolver la deformación de la placa mediante series de Fourier
+- calcular momentos flectores, cortantes y esfuerzos
+- representar gráficamente los resultados
+- exportar un resumen de los datos calculados a un archivo `.txt`
+
+## 🏗️ Modelo analizado
+
+Se considera una placa rectangular con:
+
+- longitudes `a` y `b`
 - espesor `t`
 - módulo de elasticidad `E`
 - coeficiente de Poisson `nu`
-- convergencia controlada por los valores `m` y `n`
+- parámetros de convergencia `m` y `n`
 
-Se asume una placa simplemente apoyada en todos los bordes, y se modela la deflexión `w(x, y)` con una expansión en series de Fourier. A partir de ella se calculan:
+La deflexión `w(x, y)` se modela mediante una expansión en series de Fourier, y a partir de ella se obtienen las magnitudes estructurales relevantes.
 
-- flecha `w(x, y)`
-- momentos `Mx`, `My`, `Mxy`
-- cortantes `Qx`, `Qy`
-- tensiones máximas en la sección
+## ⚙️ Tipos de carga contemplados
 
-## Cargas contempladas
-
-El programa incluye la posibilidad de trabajar con varios casos de carga:
+El programa incluye la resolución para:
 
 - carga puntual
 - carga uniforme
 - carga lineal en una franja paralela al eje `x`
 
-## Estructura del repositorio
+## 📁 Estructura del repositorio
 
-- `main.m` — punto de entrada del programa.
-- `menu.m` — menú principal con las opciones del sistema.
-- `datos.m` — entrada de datos geométricos y materiales.
-- `carga_puntual_apoyada.m` — cálculo para carga puntual.
-- `carga_uniforme_apoyada.m` — cálculo para carga uniforme.
-- `carga_lineal_x_apoyada.m` — cálculo para carga lineal.
-- `calculo_rectangular.m` — cálculo de derivadas, momentos, cortantes y tensiones.
-- `graficos_rect_Flecha.m` — representación gráfica de la flecha.
-- `graficos_rect_Momentos.m` — representación gráfica de momentos.
-- `graficos_rect_Cortantes.m` — representación gráfica de cortantes.
-- `graficos_rect_tensiones.m` — representación gráfica de tensiones.
-- `v_funciones.m` — evaluación de funciones en un punto concreto.
-- `genera_archivo.m` — genera un archivo de texto con los resultados.
-- `Instrucciones.pdf` y `Instrucciones_2.pdf` — documentación complementaria del proyecto.
-- `Python/lesen.txt` — archivo auxiliar, no forma parte del núcleo de cálculo.
+```text
+MatLab_placas_rectangulares/
+├── main.m                         # Punto de entrada del programa
+├── menu.m                        # Menú principal de opciones
+├── datos.m                       # Entrada de propiedades geométricas y mecánicas
+├── calculo_rectangular.m         # Cálculo de derivadas, momentos y cortantes
+├── carga_puntual_apoyada.m       # Caso de carga puntual
+├── carga_uniforme_apoyada.m      # Caso de carga uniforme
+├── carga_lineal_x_apoyada.m      # Caso de carga lineal
+├── graficos_rect_Flecha.m        # Gráfica de flechas
+├── graficos_rect_Momentos.m      # Gráfica de momentos
+├── graficos_rect_Cortantes.m     # Gráfica de cortantes
+├── graficos_rect_tensiones.m     # Gráfica de tensiones
+├── v_funciones.m                 # Evaluación de resultados en un punto concreto
+├── genera_archivo.m              # Generación de archivo de resultados
+├── Instrucciones.pdf            # Documentación complementaria
+├── Instrucciones_2.pdf          # Documentación complementaria
+├── Instrucciones.docx           # Documento de ayuda
+├── Python/
+│   └── lesen.txt                # Archivo auxiliar
+├── README.md                    # Documentación principal
+└── calculos_*.txt              # Archivos de salida generados por el programa
+```
 
-## Requisitos
+## 🧪 Requisitos
 
-- MATLAB (recomendado)
-- o Octave compatible con la sintaxis utilizada
+- MATLAB
+- o entorno compatible con MATLAB / Octave para la sintaxis utilizada
 
-## Cómo ejecutar
+## ▶️ Cómo ejecutar
 
-1. Abre MATLAB en la carpeta del repositorio.
-2. Asegúrate de que el directorio actual es la raíz del proyecto.
-3. Ejecuta:
+1. Abre MATLAB en la raíz del proyecto.
+2. Verifica que el directorio activo sea la carpeta del repositorio.
+3. Ejecuta el script principal:
 
 ```matlab
 main
 ```
 
-4. El programa mostrará un menú interactivo con las diferentes opciones disponibles.
-5. Introduce los datos geométricos y de carga según se solicite.
+4. Se mostrará un menú interactivo desde el que podrás:
+   - introducir datos
+   - elegir el tipo de carga
+   - generar gráficos
+   - consultar valores puntuales
 
-## Ejemplo de flujo de trabajo
+## 📊 Resultados obtenidos
 
-1. Introducir datos geométricos y mecánicos de la placa.
-2. Seleccionar el tipo de carga.
-3. Ejecutar el cálculo.
-4. Visualizar los gráficos.
-5. Consultar los valores de la flecha y esfuerzos en puntos concretos.
-6. Generar un archivo de resultados con `genera_archivo.m`.
+El programa permite obtener valores de:
 
-## Notas
+- `w(x, y)` : flecha o deflexión
+- `Mx`, `My`, `Mxy` : momentos
+- `Qx`, `Qy` : cortantes
+- `sigmax`, `sigmay`, `tauxy` : tensiones máximas
 
-- El proyecto está desarrollado con fines de cálculo y visualización académica.
-- El código muestra una implementación directa de la teoría de placas rectangulares simplemente apoyadas.
-- Algunos nombres de archivo y comentarios están en español, reflejando el contexto del trabajo académico y de ingeniería.
+## 📝 Salida de datos
 
-## Autor
+Los resultados pueden ser visualizados en pantalla y también almacenados en archivos de texto con nombres del tipo:
 
-Programa desarrollado por Germán López Pineda.
+```text
+calculos_XX_XX_YY_HH_MM_SS_.txt
+```
 
-## Licencia
+## 👨‍💻 Autor
 
-Este repositorio no incluye una licencia explícita en el contenido disponible. Si vas a reutilizarlo o compartirlo, conviene verificar si existe una política institucional o de autor antes de distribuirlo públicamente.
+Programa desarrollado por: Germán López Pineda
 
-## Estado
+## 🏛️ Contexto académico
 
-Proyecto de análisis estructural en MATLAB para placas rectangulares, orientado a cálculo académico, representación gráfica y validación numérica de resultados.
+Este proyecto está orientado a aplicaciones de ingeniería estructural y mecánica de medios continuos, con un enfoque didáctico y de cálculo analítico-numérico en placas rectangulares.
+
+## ⚠️ Licencia
+
+No se ha incluido una licencia explícita en este repositorio. Si deseas reutilizar o redistribuir el código, conviene verificar si existe una política institucional o de autor antes de compartirlo públicamente.
+
+## ✅ Estado del proyecto
+
+Proyecto funcional de cálculo estructural en MATLAB para placas rectangulares, enfocado en análisis académico, representación gráfica y evaluación de resultados mecánicos.
